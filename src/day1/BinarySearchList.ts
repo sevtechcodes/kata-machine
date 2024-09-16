@@ -17,3 +17,5 @@ export default function bs_list(haystack: number[], needle: number): boolean {
 	} while (lo < hi)
 	return false;
 }
+
+//Big-O => O(logN)
