@@ -17,3 +17,4 @@ export default function bubble_sort(arr: number[]): void {
 	}
 }
 
+//Runtime => It will take (N+1)*N/2 amount of steps. So => O(N^2)
