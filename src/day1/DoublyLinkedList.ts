@@ -131,7 +131,13 @@ export default class DoublyLinkedList<T> {
 
 	// Private helper to remove a node
 	private removeNode(node: Node<T>): T | undefined {
-		this.length--;
+
+		if (this.length === 0) {
+			const out = this.head?.value;
+			this.head = this.tail = undefined;
+			return out;
+		}
+		// this.length--;
 
 		if (node.prev) {
 			node.prev.next = node.next;
